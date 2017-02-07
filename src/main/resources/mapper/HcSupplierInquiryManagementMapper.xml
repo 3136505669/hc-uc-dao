@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.hc.scm.uc.dao.purchasing.mapper.HcSupplierInquiryManagementMapper" >
+  <resultMap id="BaseResultMapHcSupplierInquiryManagementMapper" type="com.hc.scm.uc.dao.purchasing.model.HcSupplierInquiry" >
+  
+    <result column="number" property="inquiryNo" jdbcType="VARCHAR" />
+    <result column="man" property="personInCharge" jdbcType="VARCHAR" />
+    <result column="co_number" property="supplierNo" jdbcType="VARCHAR" />
+    
+    <result column="coname" property="supplierName" jdbcType="VARCHAR" />
+    <result column="linkman" property="contactsName" jdbcType="VARCHAR" />
+    <result column="sup_tel" property="contactsTel" jdbcType="VARCHAR" />
+    
+    <result column="sup_fax" property="contactsFax" jdbcType="VARCHAR" />
+    <result column="senddate" property="typeOfShipping" jdbcType="VARCHAR" />
+    <result column="datetime" property="inquiryDate" jdbcType="VARCHAR" />
+    
+    <result column="money" property="inquiryCurrency" jdbcType="VARCHAR" />
+    <result column="tbyq" property="subject" jdbcType="VARCHAR" />
+    <result column="remarks" property="remarks" jdbcType="VARCHAR" />
+  </resultMap>
+  
+    <resultMap id="BaseResultMapHcSupplierInquiryProductManagementMapper" type="com.hc.scm.uc.dao.purchasing.model.HcSupplierInquiryProduct" >
+    
+    <result column="id" property="ID" jdbcType="INTEGER" />
+    
+    <result column="number" property="inquiryNo" jdbcType="VARCHAR" />
+    <result column="epro" property="productModel" jdbcType="VARCHAR" />
+    <result column="cpro" property="chineseName" jdbcType="VARCHAR" />
+    
+    <result column="num" property="inquiredQTY" jdbcType="VARCHAR" />
+    <result column="cpro2" property="englishName" jdbcType="VARCHAR" />
+    
+    <result column="selljg" property="quotedPrice" jdbcType="VARCHAR" />
+    <result column="cgpro_ydatetime" property="dateOfArrival" jdbcType="VARCHAR" />
+    <result column="unit" property="unit" jdbcType="VARCHAR" />
+    
+    <result column="inquiredQTY_quotedPrice$" property="inquiredQTY_quotedPrice$" jdbcType="VARCHAR" />
+    <result column="inquiredQTY_unit" property="inquiredQTY_unit" jdbcType="VARCHAR" />
+    <result column="remark" property="remark" jdbcType="VARCHAR" />
+
+  </resultMap>
+</mapper>
